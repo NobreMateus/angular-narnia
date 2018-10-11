@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {personagem} from './personagem'
+import { PersServiceService } from './pers-service.service'
 
 @Component({
   selector: 'app-root',
@@ -6,6 +8,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'narnia1';
-  objs:string[] = ["teste1", "teste2", "teste3", "teste4"]
+  
+  personagens: personagem[];
+  
+  ngOnInit(){
+    this.pers.getPersonagens()
+      .subscribe(pers => this.personagens=pers)    
+  }
+
+  constructor(private pers: PersServiceService ){
+  
+  }
+
+
+
 }

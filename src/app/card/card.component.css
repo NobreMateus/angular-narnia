@@ -1,8 +1,8 @@
 .box{
-    display: inline-block;
     height: 250px;
-    width: 40%;
-    margin: 15px;
+    width: 45%;
+    float: left;
+    margin:1%;
     background-color: sandybrown;        
 }
 
