@@ -6,6 +6,19 @@
     background-color: sandybrown;        
 }
 
+.titulo{
+    margin-top:180px;
+    margin-left: 20px;
+    color:white;
+    font-size:32px;
+}
+
+.descricao{
+    margin-left: 20px;
+    color:white;
+    font-size:20px;
+}
+
 .box:hover{
     box-shadow: inset 0 0 10px black;
 }
