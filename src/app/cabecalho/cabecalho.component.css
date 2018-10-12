@@ -1,7 +1,10 @@
 
 #cabecalho1{
-    height: 40px;
+    height: 20px;
     background-color: orange;
+    padding: 10px;
+    padding-left: 250px;
+    color:white;
 }
 #cabecalho2{
 
@@ -17,10 +20,15 @@ a{
     text-decoration: none;
 }
 
+ul, li{
+    display: inline;
+    list-style: none;
+}
+
 .botao {
     font-size: 25px;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 5%;
+    margin-right: 5%;
     height: 40px;
     padding: 5px;
     color:white;

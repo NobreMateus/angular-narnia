@@ -2,3 +2,9 @@
 *{
     margin: 0px;
 }
+
+.content{
+    padding: 40px 250px 40px 250px;
+    background-color: #303030;      
+    overflow:hidden;
+}

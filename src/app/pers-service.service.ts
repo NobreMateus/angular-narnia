@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {Observable, of} from 'rxjs';
 
-import {PERSONAGENS} from './personagens'
+import {PERSONAGENS, NARNIANOS, REIS, CIDADES, HUMANOS} from './personagens'
 import {personagem} from './personagem'
 
 
@@ -14,6 +14,22 @@ export class PersServiceService {
 
   getPersonagens(): Observable<personagem[]> {
     return of(PERSONAGENS);
+  }
+
+  getNarnianos(): Observable<personagem[]> {
+    return of(NARNIANOS);
+  }
+
+  getReis(): Observable<personagem[]> {
+    return of(REIS);
+  }
+
+  getCidades(): Observable<personagem[]> {
+    return of(CIDADES);
+  }
+
+  getHumanos(): Observable<personagem[]> {
+    return of(HUMANOS);
   }
 
 }

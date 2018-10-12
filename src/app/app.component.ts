@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import {personagem} from './personagem'
-import { PersServiceService } from './pers-service.service'
 
 @Component({
   selector: 'app-root',
@@ -9,14 +7,12 @@ import { PersServiceService } from './pers-service.service'
 })
 export class AppComponent {
   
-  personagens: personagem[];
   
   ngOnInit(){
-    this.pers.getPersonagens()
-      .subscribe(pers => this.personagens=pers)    
+    
   }
 
-  constructor(private pers: PersServiceService ){
+  constructor( ){
   
   }
 
