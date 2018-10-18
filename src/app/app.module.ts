@@ -13,6 +13,7 @@ import { NarnianosComponent } from './narnianos/narnianos.component';
 import { ReisComponent } from './reis/reis.component';
 import { HumanosComponent } from './humanos/humanos.component';
 import { CidadesComponent } from './cidades/cidades.component';
+import { InicioComponent } from './inicio/inicio.component';
 //import { PersService } from './pers.service';
 
 @NgModule({
@@ -26,10 +27,11 @@ import { CidadesComponent } from './cidades/cidades.component';
     NarnianosComponent,
     ReisComponent,
     HumanosComponent,
-    CidadesComponent
-  ],
+    CidadesComponent,
+    InicioComponent
+  ],  
   imports: [
-    BrowserModule,
+    BrowserModule,  
     RouterModule.forRoot(ROUTES)
   ],
   providers: [],

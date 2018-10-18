@@ -1,25 +1,47 @@
-.box{
+.container-card{
+    width: 100%;
+    display:flex;
+}
+
+.card{
+    width:49%;
     height: 250px;
-    width: 45%;
-    float: left;
-    margin:1%;
-    background-color: sandybrown;  
-    cursor: pointer;      
+    background-color: goldenrod;
+    background-size: cover;
+    margin-bottom: 1%;
+    margin-left: 1%;    
+    float:left;
+    overflow-y: hidden;
+    cursor: pointer;
+        transition: 
+            box-shadow 1s 0s;
 }
 
 .titulo{
-    margin-top:70px;
-    margin-left: 20px;
     color:white;
-    font-size:32px;
+    margin: 180px 0px 0px 40px;
+    font-size: 30px;
+    transition: 
+        margin-top 1s 0s;
 }
 
 .descricao{
-    margin-left: 20px;
+    opacity:0;
     color:white;
-    font-size:20px;
+    margin: 0px 5px 0px 50px;
+    font-size: 20px;
+    transition: 
+        opacity 1s 0s;
 }
 
-.box:hover{
+.card:hover{
     box-shadow: inset 0px -30px 80px -15px  black;
+}
+
+.card:hover .titulo{
+    margin-top:100px;
+}
+
+.card:hover .descricao{
+    opacity:1;  
 }

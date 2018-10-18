@@ -7,9 +7,10 @@ import { NarnianosComponent } from './narnianos/narnianos.component';
 import { ReisComponent } from './reis/reis.component';
 import { HumanosComponent } from './humanos/humanos.component';
 import { CidadesComponent } from './cidades/cidades.component';
+import { InicioComponent } from './inicio/inicio.component';
 
 export const ROUTES: Routes = [
-    {path:"", component:CardsComponent},
+    {path:"", component:InicioComponent},
     {path:"personagens", component:PersonagensComponent},
     {path:"narnianos", component:NarnianosComponent},
     {path:"reis", component:ReisComponent},

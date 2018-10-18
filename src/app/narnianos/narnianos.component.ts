@@ -17,6 +17,6 @@ export class NarnianosComponent implements OnInit {
 
   ngOnInit(){
     this.pers.getNarnianos()
-      .subscribe(pers => this.personagens=pers)  
+      .subscribe(pers => {this.personagens=pers})  
   }      
 }

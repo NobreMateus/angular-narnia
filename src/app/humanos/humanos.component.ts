@@ -17,9 +17,7 @@ export class HumanosComponent implements OnInit {
 
   ngOnInit(){
     this.pers.getHumanos()
-      .subscribe(pers => this.personagens=pers)  
-
-    console.log(this.personagens)  
+      .subscribe(pers => {this.personagens=pers})  
   } 
 
 }

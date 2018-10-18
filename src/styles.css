@@ -5,6 +5,13 @@
 
 .content{
     padding: 40px 250px 40px 250px;
-    background-color: #303030;      
+    background-color: #303030;
+    min-height: 500px;      
     overflow:hidden;
 }
+
+@media(max-width: 1000px){
+    .content{
+        padding: 40px 50px 40px 50px !important;
+    }   
+}   
